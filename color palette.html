@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Color Palette Display</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color:white;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .palette {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .color-box {
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(12, 11, 11, 0.1);
+      text-align: center;
+      color:black;
+    }
+
+    .color-sample {
+      height: 100px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .label {
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+
+    .code {
+      font-family: monospace;
+      font-size: 0.85em;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Color Palette Display</h1>
+
+<div class="palette">
+  <!-- RGB -->
+  <div class="color-box">
+    <div class="color-sample" style="background-color: rgb(255, 99, 71);"></div>
+    <div class="label">RGB</div>
+    <div class="code">rgb(255, 99, 71)</div>
+  </div>
+
+  <!-- RGBA -->
+  <div class="color-box">
+    <div class="color-sample" style="background-color: rgba(0, 128, 255, 0.5);"></div>
+    <div class="label">RGBA</div>
+    <div class="code">rgba(0, 128, 255, 0.5)</div>
+  </div>
+
+  <!-- HSL -->
+  <div class="color-box">
+    <div class="color-sample" style="background-color: hsl(120, 60%, 50%);"></div>
+    <div class="label">HSL</div>
+    <div class="code">hsl(120, 60%, 50%)</div>
+  </div>
+
+  <!-- HSLA -->
+  <div class="color-box">
+    <div class="color-sample" style="background-color: hsla(300, 100%, 70%, 0.7);"></div>
+    <div class="label">HSLA</div>
+    <div class="code">hsla(300, 100%, 70%, 0.7)</div>
+  </div>
+</div>
+
+</body>
+</html>
